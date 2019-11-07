@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "item1	item32	item33	item64	item65	item96	item97	item128	item129	item160	item161	item192	item193	item224	item225	item256	item257	item288"
+    "item2	item31	item34	item63	item66	item95	item98	item127	item130	item159	item162	item191	item194	item223	item226	item255	item258	item287"
+    "item3	item30	item35	item62	item67	item94	item99	item126	item131	item158	item163	item190	item195	item222	item227	item254	item259	item286"
+    "item4	item29	item36	item61	item68	item93	item100	item125	item132	item157	item164	item189	item196	item221	item228	item253	item260	item285"
+    "item5	item28	item37	item60	item69	item92	item101	item124	item133	item156	item165	item188	item197	item220	item229	item252	item261	item284"
+    "item6	item27	item38	item59	item70	item91	item102	item123	item134	item155	item166	item187	item198	item219	item230	item251	item262	item283"
+    "item7	item26	item39	item58	item71	item90	item103	item122	item135	item154	item167	item186	item199	item218	item231	item250	item263	item282"
+    "item8	item25	item40	item57	item72	item89	item104	item121	item136	item153	item168	item185	item200	item217	item232	item249	item264	item281"
+    "item9	item24	item41	item56	item73	item88	item105	item120	item137	item152	item169	item184	item201	item216	item233	item248	item265	item280"
+    "item10	item23	item42	item55	item74	item87	item106	item119	item138	item151	item170	item183	item202	item215	item234	item247	item266	item279"
+    "item11	item22	item43	item54	item75	item86	item107	item118	item139	item150	item171	item182	item203	item214	item235	item246	item267	item278"
+    "item12	item21	item44	item53	item76	item85	item108	item117	item140	item149	item172	item181	item204	item213	item236	item245	item268	item277"
+    "item13	item20	item45	item52	item77	item84	item109	item116	item141	item148	item173	item180	item205	item212	item237	item244	item269	item276"
+    "item14	item19	item46	item51	item78	item83	item110	item115	item142	item147	item174	item179	item206	item211	item238	item243	item270	item275"
+    "item15	item18	item47	item50	item79	item82	item111	item114	item143	item146	item175	item178	item207	item210	item239	item242	item271	item274"
+    "item16	item17	item48	item49	item80	item81	item112	item113	item144	item145	item176	item177	item208	item209	item240	item241	item272	item273";
+}
+
+.item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+    font-size: 8px;
+}
