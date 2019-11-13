@@ -80,7 +80,7 @@ key_value_pair* value_for(String key) {
   for (auto i = 0; i < sizeof images; i++){
     Serial.println(images[i].key);
     
-    if (images[i].key != key) { 
+    if (!images[i].key.equals(key)) { 
       Serial.println("Key didn't match");
       continue; 
     }
@@ -138,7 +138,8 @@ String call_api() {
 }
 
 void print_bytes(String search_key) {
-  Serial.print("Search key in print bytes is: " + search_key);
+  Serial.print("Search key in print bytes is: ");
+  Serial.print(search_key);
   
   auto kvp = value_for(search_key);
   Serial.print("Found kvp");
@@ -166,7 +167,8 @@ void setup() {
   strip.show(); // Initialize all pixels to 'off';
   Serial.begin(115200);
   connect_wifi();
-  auto image = call_api();  
+  String image = call_api();
+  image.trim();
   print_bytes(image);
   delay(100);
 }
